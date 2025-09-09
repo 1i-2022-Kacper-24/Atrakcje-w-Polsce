@@ -46,8 +46,10 @@ input, select, button {
 }
 
 .typeChoice {
-    width: auto
+    width: auto;
+    margin-right: 4px;
 }
+
 
 ul {
     list-style-type: decimal;
@@ -62,6 +64,4 @@ button {
 
 textarea {
     font-size: larger;
-    width: 100%;
-
 }
