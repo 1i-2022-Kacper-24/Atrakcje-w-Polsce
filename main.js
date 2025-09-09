@@ -8,7 +8,7 @@ document.getElementById("add").addEventListener("click", function () {
 
 
     var li = document.createElement("li");
-    li.textContent = `Nazwa atrakcji: ${name}\nWojewództwo: ${region}\nRodzaj atrakcji: ${type}\nOpis: ${description}`;
+    li.innerHTML = `Nazwa atrakcji: ${name}<br>Województwo: ${region}<br>Rodzaj atrakcji: ${type}<br>Opis: ${description}<br>`;
 
 
     const removeButton = document.createElement("button");
