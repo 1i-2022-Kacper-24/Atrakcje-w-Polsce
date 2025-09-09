@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atrakcje turystyczne</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dodaj atrakcję:</h1>
+        </header>
+
+        <form id="attraction-form">
+            <label>Nazwa atrakcji:</label>
+            <input id="attraction-name" type="text" required><br><br>
+
+            <label>Województwo:</label>
+            <select name="region" id="region" required>
+                <option value="Śląskie">Śląskie</option>
+                <option value="Dolnośląskie">Dolnośląskie</option>
+                <option value="Opolskie">Opolskie</option>
+                <option value="Małopolskie">Małopolskie</option>
+                <option value="Wielkopolskie">Wielkopolskie</option>
+                <option value="Mazowieckie">Mazowieckie</option>
+                <option value="Świętokrzyskie">Świętokrzyskie</option>
+                <option value="Lubuskie">Lubuskie</option>
+                <option value="Podkarpackie">Podkarpackie</option>
+                <option value="Lubelskie">Lubelskie</option>
+                <option value="Podlaskie">Podlaskie</option>
+                <option value="Pomorskie">Pomorskie</option>
+                <option value="Zachodnio-pomorskie">Zachodnio-pomorskie</option>
+                <option value="Kujawsko-pomorskie">Kujawsko-pomorskie</option>
+                <option value="Łódzkie">Łódzkie</option>
+                <option value="Warmińsko-Mazurskie">Warmińsko-Mazurskie</option>
+            </select><br><br>
+
+            <label>Rodzaj atrakcji:</label><br>
+            <input type="radio" class="typeChoice" id="typeChoice1" name="type" value="Krajoznawcza">Krajoznawcza<br>
+            <input type="radio" class="typeChoice" id="typeChoice2" name="type" value="Turystyczna">Turystyczna<br>
+            <input type="radio" class="typeChoice" id="typeChoice3" name="type" value="Historyczna">Historyczna<br>
+            <input type="radio" class="typeChoice" id="typeChoice4" name="type" value="Rozrywka">Rozrwyka<br><br>
+
+            <label>Opis:</label>
+            <textarea name="descritpion" id="attraction-description" cols="95" rows="10"></textarea><br><br>
+            
+
+            <button type="button" id="add">Dodaj</button>
+        </form> <br><br>
+
+        <h2>Lista atrakcji:</h2>
+        <ul id="attraction-list"></ul>
+        <h6>Skulimowski Kacper, 09.09.2025</h6>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
